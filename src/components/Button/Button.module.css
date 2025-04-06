@@ -1,0 +1,28 @@
+.primary {
+  border-radius: 50px;
+  color: #fff;
+  background-color: #42712c;
+  border: none;
+  padding: 10px 15px;
+  transition: all ease 0.25s;
+}
+
+.primary:hover,
+.primary:focus {
+  box-shadow: inset 0 3rem 0 0 #222222 !important;
+}
+
+.outline {
+  border-radius: 50px;
+  color: #222222;
+  background-color: transparent;
+  border: 1px solid #222222;
+  padding: 10px 15px;
+  transition: all ease 0.25s;
+}
+
+.outline:hover,
+.outline:focus {
+  box-shadow: inset 0 3rem 0 0 #42712c !important;
+  color: #fff;
+}

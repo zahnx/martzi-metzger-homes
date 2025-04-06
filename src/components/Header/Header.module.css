@@ -1,0 +1,14 @@
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.logoOffCanvas {
+  height: 50px;
+  width: auto;
+  padding: 0;
+}
+
+.customToggler {
+  border: none !important;
+}
