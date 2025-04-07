@@ -1,6 +1,6 @@
-function SocialItem({ size, icon, link, color }) {
+function SocialItem({ size, icon, link, color, ariaLabel }) {
   return (
-    <a href={link}>
+    <a href={link} target="_blank" rel="noreferrer" aria-label={ariaLabel}>
       <i
         className={icon}
         style={{

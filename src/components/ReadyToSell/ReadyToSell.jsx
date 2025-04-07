@@ -41,14 +41,14 @@ function ReadyToSell() {
   return (
     <section id="get-sold">
       <div className="container-fluid pw-1800 text-center">
-        <h2 data-animation="fadeSlowInUp" data-delay="3">
+        <h2 data-animation="fadeSlowInUp" data-delay="1">
           Ready to Sell? We’ve Got You Covered!
         </h2>
         <div className="row mt-5">
           <div
             className="col-12 col-md-6 order-1 order-md-2 d-flex flex-column mb-3"
             data-animation="fadeSlowInUp"
-            data-delay="3"
+            data-delay="1"
           >
             <img src={`./${image}.webp`} alt={btnText} />
             <p>{description}</p>
@@ -56,7 +56,7 @@ function ReadyToSell() {
           <div
             className="col-12 col-md-6 order-2 order-md-1 d-flex flex-column "
             data-animation="fadeSlowInUp"
-            data-delay="3"
+            data-delay="1"
           >
             {sellData.map((item) => (
               <SellBtn

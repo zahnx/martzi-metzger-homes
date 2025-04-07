@@ -23,6 +23,7 @@ const AnimationProvider = ({ children }) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             triggerAnimation(entry.target);
+            entry.target.classList.remove("pre-animate"); // optional cleanup
           }
         });
       },
@@ -30,6 +31,7 @@ const AnimationProvider = ({ children }) => {
     );
 
     document.querySelectorAll("[data-animation]").forEach((elm) => {
+      elm.classList.add("pre-animate"); // 💥 Add this
       observer.observe(elm);
     });
 

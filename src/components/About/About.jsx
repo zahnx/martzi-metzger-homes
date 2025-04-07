@@ -22,24 +22,24 @@ function About() {
             <h3 data-animation="textInUp" data-delay="1">
               {data.name}
             </h3>
-            <h4 data-animation="textInUp" data-delay="2">
+            <h4 data-animation="textInUp" data-delay="1">
               {data.title}
             </h4>
-            <p data-animation="textInUp" data-delay="3">
+            <p data-animation="textInUp" data-delay="1">
               {data.description}
             </p>
             <a
               className="about-btn"
               href={`tel:${data.phoneNumber}`}
               data-animation="textInUp"
-              data-delay="4"
+              data-delay="1"
             >
               <span className="me-3">
-                <i class="bi bi-telephone"></i>
+                <i className="bi bi-telephone"></i>
               </span>
               {data.phoneNumber}
             </a>
-            <Socials size="20px" delay="4" />
+            <Socials size="20px" delay="1" />
           </div>
         </div>
       </div>

@@ -7,9 +7,9 @@ function SellBtn({ buttonText, onClick, isSelected }) {
       {buttonText}
       <span>
         {isSelected ? (
-          <i class="bi bi-arrow-right"></i>
+          <i className="bi bi-arrow-right"></i>
         ) : (
-          <i class="bi bi-arrow-down-right"></i>
+          <i className="bi bi-arrow-down-right"></i>
         )}
       </span>
     </button>

@@ -1,14 +1,20 @@
+import Button from "../Button/Button";
+
 function FindHome() {
   return (
     <section id="find-home">
-      <div className="container-fluid find-home-bg text-center">
+      <div
+        className="container-fluid find-home-bg text-center"
+        data-animation="textInUp"
+        data-delay="1"
+      >
         <h2>Find Your Dream Home!</h2>
-        <div className="find-home-form mw-900">
+        <div className="find-home-form mw-1200">
           <form action="">
             <h3>Search Listings</h3>
             <div className="row">
               <div className="col-12 col-md-4 col-lg-4 d-flex flex-column text-start">
-                <label for="location">Location</label>
+                <label htmlFor="location">Location</label>
                 <select id="location" name="location">
                   <option value="">Any</option>
                   <option value="433">Alamo</option>
@@ -20,7 +26,7 @@ function FindHome() {
                 </select>
               </div>
               <div className="col-12 col-md-4 col-lg-4 d-flex flex-column text-start">
-                <label for="type">Type</label>
+                <label htmlFor="type">Type</label>
                 <select id="type" name="type">
                   <option value="">Any</option>
                   <option value="7">Land</option>
@@ -30,7 +36,7 @@ function FindHome() {
                 </select>
               </div>
               <div className="col-12 col-md-4 col-lg-4 d-flex flex-column text-start">
-                <label for="sortby">Sort By</label>
+                <label htmlFor="sortby">Sort By</label>
                 <select id="sortby" name="sortby">
                   <option disabled="" hidden="" value=""></option>
                   <option value="newest">Newest</option>
@@ -42,6 +48,61 @@ function FindHome() {
                   <option value="tba">Bathrooms (Low to High)</option>
                   <option value="tbd">Bathrooms (High to Low)</option>
                 </select>
+              </div>
+            </div>
+
+            <div className="row mt-4">
+              <div className="col-12 col-md-4 col-lg-4 d-flex flex-column text-start">
+                <div className="row">
+                  <div className="col-6 col-md-6 d-flex flex-column">
+                    <label htmlFor="bedrooms">Bedrooms</label>
+                    <select id="bedrooms" name="bedrooms">
+                      <option value="">Any</option>
+                      <option value="0">Studio</option>
+                      <option value="1">1+</option>
+                      <option value="2">2+</option>
+                      <option value="3">3+</option>
+                      <option value="4">4+</option>
+                      <option value="5">5+</option>
+                      <option value="6">6+</option>
+                    </select>
+                  </div>
+                  <div className="col-6 col-md-6 d-flex flex-column">
+                    <label htmlFor="baths">Baths</label>
+                    <select id="baths" name="baths">
+                      <option value="">Any</option>
+                      <option value="1">1+</option>
+                      <option value="2">2+</option>
+                      <option value="3">3+</option>
+                      <option value="4">4+</option>
+                      <option value="5">5+</option>
+                      <option value="6">6+</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 col-lg-4 d-flex flex-column text-start">
+                <div className="row">
+                  <div className="col-6 col-md-6 d-flex flex-column">
+                    <label htmlFor="min-price">Min Price</label>
+                    <input
+                      type="number"
+                      name="min-price"
+                      id="min-price"
+                    ></input>
+                  </div>
+                  <div className="col-6 col-md-6 d-flex flex-column">
+                    <label htmlFor="max-price">Max Price</label>
+                    <input
+                      type="number"
+                      name="max-price"
+                      id="max-price"
+                    ></input>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 col-lg-4 d-flex flex-column text-start">
+                <Button className="primary">Search Now</Button>
               </div>
             </div>
           </form>
